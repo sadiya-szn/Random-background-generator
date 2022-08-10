@@ -5,6 +5,7 @@ document.body.style.background ="linear-gradient(to right, " + "#" + randomColor
 // document.getElementById('color').innerHTML = "#" + randomColor;
 }
 
+
 var getBg = document.getElementById('getbg');
 getBg.addEventListener('click', setBg);
 setBg();
