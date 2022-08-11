@@ -25,6 +25,10 @@ body{
 
 }
 
+.wrapper h1{
+   padding-bottom: 20px;
+}
+
 #getbg{
    padding: 10px;
    color: #fff;
@@ -39,6 +43,30 @@ span{
    /* padding: 1em; */
    font-size: 2em;
    font-family: monospace;
+}
+
+footer{
+   position:absolute;
+   bottom: 0;
+   background-color: #1a1919;
+   width: 100%;
+   padding: 5px;
+   font-size: 20px;
+   color: #fff;
+}
+.box{
+   display: flex;
+   flex-direction: column;
+}
+
+.box a{
+   text-decoration: none;
+   background-color: rgb(37, 82, 63);
+   padding: 10px;
+   border-radius: 5px;
+   color: #fff;
+   margin: 5px 0;
+
 }
 
  

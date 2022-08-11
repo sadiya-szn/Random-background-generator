@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1> RADIAL GRADIENT BACKGROUND GENERATOR</h1>
+        <button id="getbg">GET BACKGROUND</button>
+        <span id="color"></span>
+    </div>
+<script>
+
+function setBg () {
+    randomColor = Math.floor(Math.random() * 16777215).toString(16);
+    randomColorr = Math.floor(Math.random() * 16777215).toString(16);
+    deg = Math.floor(Math.random() * 100);
+    degg = deg + "%";
+    gradient = ["radial-gradient(closest-side, ", "radial-gradient(at top right, ", "radial-gradient(at top left, ", "radial-gradient(at bottom left, ", "radial-gradient(at bottom right, ", "radial-gradient(farthest-corner, ",
+    "radial-gradient(closest-corner ", "radial-gradient(farthest-side, ", "radial-gradient(ellipse at bottom, ", "radial-gradient(ellipse at top, "];
+    gradientt = gradient[Math.floor(Math.random() * 10)];
+
+    
+document.body.style.background = gradientt + "#" + randomColor + ","  + "#" + randomColorr + ")";
+document.getElementById('color').innerHTML = gradientt + "#" + randomColor + "," + "#" + randomColorr + ")";
+}
+
+
+var getBg = document.getElementById('getbg');
+getBg.addEventListener('click', setBg);
+setBg();
+
+
+</script>
+</body>
+</html>
